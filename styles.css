@@ -2,6 +2,29 @@ a {
     text-decoration: none;
 }
 
-/* .contact1 {
-    line-height: 55px;
-} */
+body {
+    background-color: #CCF3EE;
+}
+
+h1 {
+    color: #53aaaa;
+}
+
+h2 {
+    color: #53aaaa;
+}
+
+h3 {
+    color: #53aaaa;
+}
+
+hr {
+width: 5%;
+border-color: rgb(128, 128, 128);
+border-style: none;
+border-top-style: dotted;
+border-width: 6px;
+background-color: #CCF3EE;
+
+
+}
