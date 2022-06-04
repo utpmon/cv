@@ -4,6 +4,7 @@ a {
 
 body {
     background-color: #CCF3EE;
+    padding: 30px;
 }
 
 h1 {
@@ -25,6 +26,27 @@ border-style: none;
 border-top-style: dotted;
 border-width: 6px;
 background-color: #CCF3EE;
+}
 
+header {
+    display: inline-block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    background-color: #14C38E;
+    width: 100%;
+    margin: 0;
 
+    padding: 10px;
+}
+
+nav {
+    display: inline-block;
+    width: 125px;
+    font-size: 1.25rem;
+}
+.hovereffect:hover {
+    color: #CCF3EE;
 }
