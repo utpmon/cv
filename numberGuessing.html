@@ -25,11 +25,22 @@
         color: white;
         padding: 3px;
       }
+      
+      #theme {
+            display: inline-block;
+            position: absolute;
+            right: 50px;
+        }
     </style>
   </head>
 
   <body>
     <h1>Number guessing game</h1>
+    <label for="theme"></label>
+    <select name="" id="theme">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
 
     <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
 
@@ -120,19 +131,20 @@
       
 
 
-    //   function restartGame() {
-    //     guessField.disabled = false;
-    //     guessSubmit.disabled = false;
-    //     document.body.removeChild(restartButton);
-    //     randomNumber = Math.floor(Math.random()*100) +1;
-    //     guessField.value = "";
-    //     guessCount = 1;
-    //     lastResult.style.backgroundColor = "white";
-    //     var resetParas = document.querySelectorAll(".resultParas p");
-    //     for (var resetPara of resetParas) {
-    //         resetPara.textContent = "";
-    //   }
-    // }
+    document.querySelector("select").addEventListener("change", applyTheme);
+        function applyTheme() {
+            const themeSelected = document.querySelector("select").value;
+            if(themeSelected === "dark") {
+                console.log(themeSelected);
+                document.querySelector("html").style.backgroundColor = "black";
+                document.querySelector("html").style.color = "grey";
+                document.querySelector("select").style.backgroundColor = "grey";
+            } else if (themeSelected === "light") {
+                document.querySelector("html").style.backgroundColor = "white";
+                document.querySelector("html").style.color = "black";
+                document.querySelector("select").style.backgroundColor = "white";
+            }
+        } 
       
 
 
