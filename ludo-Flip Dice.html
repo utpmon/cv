@@ -20,7 +20,7 @@ img {
 }
 
 button {
-    background-color: #3B9AE1;
+    background-color: #EC7272;
 }
     </style>
 </head>
@@ -37,7 +37,7 @@ button {
             var imageName = "ludoimages/dice" + randomNumber + ".png";
             setTimeout(function()
                        {document.querySelector("img").setAttribute("src", imageName);
-                       }, 3.6 * 1000);
+                       }, 3.5 * 1000);
             let soundEffect = new Audio("Dice-soundeffect.mp3");
             soundEffect.play();
         }
