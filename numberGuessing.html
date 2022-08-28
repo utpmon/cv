@@ -19,6 +19,7 @@
       
       .form input[type="number"] {
         width: 200px;
+        backgroundColor: grey;
       }
 
       .lastResult {
@@ -79,17 +80,17 @@
             
         if (userGuess === randomNumber) {
             lastResult.textContent = "Congratulation! you have guessed the right number.";
-            lastResult.style.backgroundColor = "green";
+            lastResult.style.backgroundColor = "#1E5128";
             lowOrHigh.textContent = "";
             gameOver();
         } else if (guessCount === 10) {
             lastResult.textContent = "Game is over";
-            lastResult.style.backgroundColor = "red";
+            lastResult.style.backgroundColor = "#B25068";
             lowOrHigh.textContent = "";
             gameOver();
         } else {
             lastResult.textContent = "Wrong";
-            lastResult.style.backgroundColor = "red";
+            lastResult.style.backgroundColor = "#B25068";
             if (userGuess < randomNumber) {
                 lowOrHigh.textContent = "Your guess was very low!"
             } else if (userGuess > randomNumber) {
@@ -120,7 +121,6 @@
         randomNumber = Math.floor(Math.random()*100) +1;
         guessField.value = "";
         guessCount = 1;
-        //lastResult.style.backgroundColor = "white";
           const themeSelected = document.querySelector("select").value;
             if(themeSelected === "dark"){
               lastResult.style.backgroundColor = "black";
