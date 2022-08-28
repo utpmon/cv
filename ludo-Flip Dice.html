@@ -35,7 +35,9 @@ button {
         function flip () {
             let randomNumber = (Math.floor(Math.random() * 6)) + 1;
             var imageName = "ludoimages/dice" + randomNumber + ".png";
-            document.querySelector("img").setAttribute("src", imageName);
+            setTimeout(function()
+                       {document.querySelector("img").setAttribute("src", imageName);
+                       }, 3.1 * 1000);
             let soundEffect = new Audio("Dice-soundeffect.mp3");
             soundEffect.play();
         }
