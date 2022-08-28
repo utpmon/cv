@@ -141,14 +141,15 @@
         function applyTheme() {
             const themeSelected = document.querySelector("select").value;
             if(themeSelected === "dark") {
-                console.log(themeSelected);
                 document.querySelector("html").style.backgroundColor = "black";
                 document.querySelector("html").style.color = "grey";
                 document.querySelector("select").style.backgroundColor = "grey";
+                lastResult.style.backgroundColor = "black";
             } else if (themeSelected === "light") {
                 document.querySelector("html").style.backgroundColor = "white";
                 document.querySelector("html").style.color = "black";
                 document.querySelector("select").style.backgroundColor = "white";
+                lastResult.style.backgroundColor = "white";
             }
         } 
       
