@@ -121,6 +121,13 @@
         guessField.value = "";
         guessCount = 1;
         //lastResult.style.backgroundColor = "white";
+          const themeSelected = document.querySelector("select").value;
+            if(themeSelected === "dark"){
+              lastResult.style.backgroundColor = "black";
+            } else if ( themeSelected === "light") {
+              lastResult.style.backgroundColor = "white";
+            }
+          
         var resetParas = document.querySelectorAll(".resultParas p");
         for (var resetPara of resetParas) {
             resetPara.textContent = "";
