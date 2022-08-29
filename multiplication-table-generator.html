@@ -35,7 +35,7 @@
 
         .div3 {
             display: block;
-            margin: 75px 140px 75px 140px;
+            margin: 10% 35% 10% 35%;
             background-color: #FFB3B3;
         }
 
@@ -51,7 +51,7 @@
     <div class="div2"><input id="numberInput" type="number">
     <button class="generate">generate</button></div>
     <div class="div3">
-    <p class="result"></p>
+    
     </div>
 
     <script>
@@ -68,18 +68,21 @@
             
         }
 
+
+        
+
         function calculate2() {
-            result.textContent = "";
+            document.querySelector(".div3").textContent = "";
             let numberEntered = document.querySelector("#numberInput").value;
             for (let i = 1; i < 21; i++){
                 let result1 = numberEntered * i;
-
-                let newResult = numberEntered+ " x " + i + " = " + result1 + "   ||    ";
-                result.textContent += newResult;
-               
-
+                let newResult = `${numberEntered} x ${i} = ${result1}`;
+                let newLine = document.createElement("p");
+                newLine.textContent = newResult;
+                document.querySelector(".div3").appendChild(newLine);
 
             }
+    
         }
 
     </script>
