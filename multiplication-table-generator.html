@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table Generator</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            color: #F65A83;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        button {
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        button:hover {
+            background-color: rgb(153, 149, 149);
+        }
+
+        .div1 {
+            margin-right: 25px;
+        }
+
+        .div3 {
+            display: block;
+            margin: 75px 100px 75px 100px;
+            background-color: #FFB3B3;
+        }
+
+        .outputPara {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Digital Multiplication Table</h1>
+    <div class="div1"><label for="numberInput">Enter a number of your choice</label></div>
+    <div class="div2"><input id="numberInput" type="number">
+    <button class="generate">generate</button></div>
+    <div class="div3">
+    <p class="result"></p>
+    </div>
+
+    <script>
+        const generate = document.querySelector(".generate");
+        
+        let result = document.querySelector(".result");
+
+        generate.addEventListener("click", calculate);
+
+        function calculate(){
+            if (document.querySelector("#numberInput").value !== ""){
+                calculate2();
+            }
+            
+        }
+
+        function calculate2() {
+            result.textContent = "";
+            let numberEntered = document.querySelector("#numberInput").value;
+            for (let i = 1; i < 21; i++){
+                let result1 = numberEntered * i;
+
+                let newResult = numberEntered+ " x " + i + " = " + result1 + "   ||    ";
+                result.textContent += newResult;
+               
+
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
