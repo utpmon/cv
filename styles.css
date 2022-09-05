@@ -8,6 +8,7 @@ body {
 }
 
 .exceptBody {
+    background-color: #E4E9FD;
     background-image: -webkit-linear-gradient (65deg, #CCF3EE 50%, #E4E9FD 50%);
     
  .bio {
