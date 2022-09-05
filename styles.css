@@ -9,6 +9,10 @@ body {
 
 .exceptBody {
     background-image: -webkit-linear-gradient (65deg, #CCF3EE 50%, #E4E9FD 50%);
+    
+ .bio {
+     text-align: center;
+    }
 
 h1 {
     color: #53aaaa;
