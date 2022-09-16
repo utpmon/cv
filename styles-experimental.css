@@ -1,0 +1,19 @@
+.nav-item {
+    margin: 0 10px 0 10px;
+}
+
+.content {
+    padding: 10% 6% 10% 6%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.navbar-brand {
+    padding-left: 5%;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: bold;
+}
+
+.searchButton {
+    padding-right: 6%;
+}
